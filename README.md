@@ -8,4 +8,4 @@
 技术栈：React + Vite + Node.js + Express + MongoDB  
 正在高速开发，欢迎 Star 和贡献！
 
-License: MIT
+License: MI
