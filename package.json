@@ -3,14 +3,11 @@
   "version": "1.0.0",
   "type": "module",
 "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview",
-  "test": "vitest",
-  "test:watch": "vitest --watch",
-  "test:coverage": "vitest --coverage",
-  "test:ui": "vitest --ui"
-},
+  "dev": "next dev",
+  "build": "next build",
+  "export": "next build && next export", // 关键：静态导出命令
+  "deploy": "npm run export && gh-pages -d out"
+}
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -21,4 +18,5 @@
     "vite": "^4.4.5"
   }
 }
+
 
