@@ -9,4 +9,14 @@ const nextConfig = {
   assetPrefix: '/AIhaoban-CN', // 资产路径
 };
 
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',
+  images: {
+    unoptimized: true
+  },
+  trailingSlash: true,
+  ignoreBuildErrors: true,
+};
+
 module.exports = nextConfig;
